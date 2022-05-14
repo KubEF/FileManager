@@ -14,7 +14,7 @@ namespace FileManager
             (from disc in DriveInfo.GetDrives()
             select disc.Name).ToArray();
         public static string? NowDirectoryWay;
-
+         
         public static string[]? GoForward(string path)
         {
             if (path == "C:\\" || path == "D:\\")
@@ -78,6 +78,7 @@ namespace FileManager
         }
         public static void DeletePath(string path)
         {
+            //commit для проверки
             if(File.Exists(path)) File.Delete(path);
             else
             {
@@ -126,6 +127,7 @@ namespace FileManager
             else
             {
                 ZipFile.CreateFromDirectory(OldPath, NewPath);
+                
             }
         }
     }
