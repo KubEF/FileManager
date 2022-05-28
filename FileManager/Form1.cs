@@ -174,5 +174,11 @@ namespace FileManager
             FinderForm finderForm = new(userSettings, FileWay.Text);
             finderForm.Show();
         }
+
+        private void downloadButton_Click(object sender, EventArgs e)
+        {
+            DownloadForm downloadForm = new(userSettings);
+            downloadForm.Show();
+        }
     }
 }

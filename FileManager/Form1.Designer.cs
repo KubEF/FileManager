@@ -38,6 +38,7 @@
             this.CompressButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.asSearhButton = new System.Windows.Forms.Button();
+            this.downloadButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FileWay
@@ -138,11 +139,22 @@
             this.asSearhButton.UseVisualStyleBackColor = true;
             this.asSearhButton.Click += new System.EventHandler(this.asSearhButton_Click);
             // 
+            // downloadButton
+            // 
+            this.downloadButton.Location = new System.Drawing.Point(759, 364);
+            this.downloadButton.Name = "downloadButton";
+            this.downloadButton.Size = new System.Drawing.Size(219, 51);
+            this.downloadButton.TabIndex = 10;
+            this.downloadButton.Text = "Скачивание";
+            this.downloadButton.UseVisualStyleBackColor = true;
+            this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 500);
+            this.Controls.Add(this.downloadButton);
             this.Controls.Add(this.asSearhButton);
             this.Controls.Add(this.SettingsButton);
             this.Controls.Add(this.CompressButton);
@@ -173,5 +185,6 @@
         private Button CompressButton;
         private Button SettingsButton;
         private Button asSearhButton;
+        private Button downloadButton;
     }
 }
