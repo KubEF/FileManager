@@ -169,5 +169,10 @@ namespace FileManager
 
         #endregion
 
+        private void asSearhButton_Click(object sender, EventArgs e)
+        {
+            FinderForm finderForm = new(userSettings, FileWay.Text);
+            finderForm.Show();
+        }
     }
 }

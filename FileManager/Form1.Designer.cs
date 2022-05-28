@@ -37,6 +37,7 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.CompressButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
+            this.asSearhButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FileWay
@@ -127,11 +128,22 @@
             this.SettingsButton.UseVisualStyleBackColor = true;
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
+            // asSearhButton
+            // 
+            this.asSearhButton.Location = new System.Drawing.Point(758, 310);
+            this.asSearhButton.Name = "asSearhButton";
+            this.asSearhButton.Size = new System.Drawing.Size(220, 48);
+            this.asSearhButton.TabIndex = 9;
+            this.asSearhButton.Text = "Асинхронный поиск";
+            this.asSearhButton.UseVisualStyleBackColor = true;
+            this.asSearhButton.Click += new System.EventHandler(this.asSearhButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 500);
+            this.Controls.Add(this.asSearhButton);
             this.Controls.Add(this.SettingsButton);
             this.Controls.Add(this.CompressButton);
             this.Controls.Add(this.BackButton);
@@ -160,5 +172,6 @@
         private Button BackButton;
         private Button CompressButton;
         private Button SettingsButton;
+        private Button asSearhButton;
     }
 }
